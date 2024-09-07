@@ -28,7 +28,7 @@ const ResultCard = ({ movie }) => {
             style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
           >
             {movie.original_title}
-            <span style={{ marginLeft: "10px" }}>
+            <span style={{ margin: "10px", padding: "20px" }}>
               {isOverviewVisible ? (
                 <i className="fas fa-chevron-up"></i>
               ) : (

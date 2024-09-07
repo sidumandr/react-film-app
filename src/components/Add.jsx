@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 import ResultCard from "./ResultCard";
 import { GlobalContext } from "../context/GlobalState";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import MovieCarousel from "./MovieCarousel";
+// import ImdbCarousel from "./ImdbCarousel";
 
 const Add = () => {
   const { safa } = useContext(GlobalContext);
-
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -46,23 +48,26 @@ const Add = () => {
 
   return (
     <div className="add-page">
-      <img src="https://i.pinimg.com/originals/b4/57/0f/b4570f86fed3521225a0d11a38a55e40.jpg" />
-      <div className="titles">
-        <h1>Hoş Geldiniz</h1> <br />
-        <h3>{safa}</h3>
-        <h2>
-          Sınırsız film, dizi ve şovları listele, izlediysen izlediklerine ekle,
-          <br />
-          izlemediysen izleyeceklerine ekle.
-        </h2>
-      </div>
-      <div className="input-wrapper">
-        <input
-          type="text"
-          value={query || ""}
-          onChange={onChange}
-          placeholder="Film, Dizi ve Kişileri Keşfedin... "
-        />
+      <div className="container">
+        <MovieCarousel />
+        <div className="titles">
+          <h1>Hoş Geldiniz</h1> <br />
+          <h3>{safa}</h3>
+          <h2>
+            Sınırsız film, dizi ve şovları listele, izlediysen izlediklerine
+            ekle,
+            <br />
+            izlemediysen izleyeceklerine ekle.
+          </h2>
+        </div>
+        <div className="input-wrapper">
+          <input
+            type="text"
+            value={query || ""}
+            onChange={onChange}
+            placeholder="Film, Dizi ve Kişileri Keşfedin... "
+          />
+        </div>
       </div>
 
       {loading && <p>Loading...</p>}
