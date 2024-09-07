@@ -26,7 +26,10 @@ const MovieControls = ({ movie, type }) => {
 
       {type === "watched" && (
         <>
-          <button className="ctrl-btn" onClick={() => moveToWatchList(movie)}>
+          <button
+            className="ctrl-btn eye"
+            onClick={() => moveToWatchList(movie)}
+          >
             <i className="fa-fw far fa-eye-slash"></i>
           </button>
           <button
