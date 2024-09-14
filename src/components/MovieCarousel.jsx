@@ -7,7 +7,7 @@ const MovieCarousel = () => {
   const { movies } = useMovies(); // MovieContext'ten filmleri al
 
   return (
-    <Carousel>
+    <Carousel className="carousel">
       {movies.map((movie) => {
         const imgUrl = `https://image.tmdb.org/t/p/original${movie.backdrop_path}`;
         return (
@@ -16,9 +16,9 @@ const MovieCarousel = () => {
               className="d-block w-100"
               src={imgUrl}
               alt={movie.title}
-              style={{ height: "400px", objectFit: "cover" }} // Yüksek çözünürlüklü görsel ve uygun yerleşim
+              style={{ height: "400px", objectFit: "cover" }}
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="caption">
               <h3>{movie.title}</h3>
               <p>{movie.overview}</p>
             </Carousel.Caption>

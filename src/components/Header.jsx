@@ -7,11 +7,11 @@ const Header = () => {
       <div className="container">
         <div className="inner-content">
           <div className="brand">
-            <Link to={"/"}>İzleyeceklerim</Link>
+            <Link to={"/"}>İZLEYECEKLERİM</Link>
           </div>
           <ul className="nav-links">
             <li>
-              <Link to={"/watched"}>İzlediklerim</Link>
+              <Link to={"/watched"}>İZLEDİKLERİM</Link>
             </li>
 
             <li>

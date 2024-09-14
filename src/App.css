@@ -75,7 +75,8 @@ header a:hover {
 }
 
 header .brand a {
-  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -99,6 +100,12 @@ header .nav-links li {
 header .nav-links li a {
   color: #dde6ed;
   font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header .nav-links li:first-child {
+  letter-spacing: 1.5px;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -156,11 +163,18 @@ header .nav-links li:last-child {
   position: relative;
   top: 20px;
   margin-top: 1%;
-  font-size: 48px;
+  font-size: 70px;
+  letter-spacing: -3px;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .add-page .titles h2 {
+  letter-spacing: -1px;
+  font-style: italic;
   font-size: 32px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: none;
 }
 
 .add-page .input-wrapper input {
@@ -282,8 +296,20 @@ header .nav-links li:last-child {
 }
 
 .movie-page .heading {
-  color: var(--primary);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: -1.5px;
   margin: 0;
+}
+
+.movie-page .count-pill {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+  letter-spacing: -1.5px;
+  margin: 0;
+  color: #ffff;
+  background-color: #27374d;
+  border-radius: 5px;
+  padding: 0px 5px;
 }
 
 .movie-grid {
@@ -397,7 +423,7 @@ header .nav-links li:last-child {
 /* Movie Card End */
 
 /* Carousel Start */
-.carousel-item {
+/* .carousel-item {
   width: auto;
   height: auto;
   overflow: hidden;
@@ -410,6 +436,24 @@ header .nav-links li:last-child {
   width: auto;
   height: 100%;
   object-fit: cover;
+} */
+
+.carousel .caption {
+  border-radius: 30px;
+  background-color: #00000086;
+  letter-spacing: 0.5px;
+}
+
+.carousel h3 {
+  font-weight: bolder;
+  text-shadow: 1px 2px #c2c2c29b;
+  font-size: 300%;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.carousel p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* Carousel End */

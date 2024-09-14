@@ -51,13 +51,12 @@ const Add = () => {
       <div className="container">
         <MovieCarousel />
         <div className="titles">
-          <h1>Hoş Geldiniz</h1> <br />
-          <h3>{safa}</h3>
+          <h1>HOŞ GELDİNİZ</h1> <br />
           <h2>
             Sınırsız film, dizi ve şovları listele, izlediysen izlediklerine
-            ekle,
+            ekle.
             <br />
-            izlemediysen izleyeceklerine ekle.
+            İzlemediysen izleyeceklerine ekle.
           </h2>
         </div>
         <div className="input-wrapper">

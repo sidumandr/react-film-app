@@ -8,7 +8,7 @@ const Watchlist = () => {
     <div className="movie-page">
       <div className="container">
         <div className="header">
-          <h1 className="heading">İzlenecek Filmlerim</h1>
+          <h1 className="heading">İzleyeceklerim</h1>
           <div className="count-pill">
             {watchlist.length} {watchlist.length < 2 ? "Movie" : "Movies"}
           </div>
